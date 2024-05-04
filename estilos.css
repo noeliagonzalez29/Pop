@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    
+    background: linear-gradient(to bottom right, blue, pink);
+    background-image: url(img/dualipa.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+      
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 30px;
+}
+li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Skranji", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    margin-top: 50%;
+}
+li a:hover{
+    background-color: rgba(230, 110, 241, 0.781);
+}
+header{
+    
+    height: 10%;
+}
+nav{
+    background-color: rgba(128, 128, 128, 0.295);
+    border-radius: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 15%;
+}
+ main{
+    background-color: rgba(128, 128, 128, 0.295);
+    height: 70%;
+}
+#comienzo{
+    border: solid;
+    border-radius: 20%;
+    border-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+h3{
+    text-align: center;
+    font-family: "Skranji", system-ui;
+    font-weight: 900;
+}
+#container-padre{
+    display: flex;
+    justify-content: center;
+    gap: 1%; 
+}
+
+.plataformas{
+    border-radius: 30%;
+    width: 90px;
+   
+}
+
+footer{
+    height: 5%;
+    margin-top: 1%;
+}
+footer p{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(128, 128, 128, 0.295);
+   
+}
+#logo{
+    width: 10%;
+    height: 75%;
+    border-radius: 20%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+}
+#radical{
+    width: 15%;
+    height: 15%;
+    
+}
+#card{
+    border: solid;
+    border-color: blue;
+    width: 40%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.container .card{
+    width: 330px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2 2 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 4px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgmerch{
+    width: 150px;
+    height: 150px;
+}
+.container .card h4{
+    font-weight: 600;
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+button{
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09ff,#00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 12px;
+    padding: 2px;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 30%;
+}
+button span{
+    background-color: #111;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: .3s;
+    
+}
+button:hover span{
+    background: none;
+}
+button:active{
+    transform: scale(0.9);
+}
+.card a{
+    text-decoration: none;
+}
