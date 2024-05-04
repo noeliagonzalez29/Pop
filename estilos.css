@@ -248,3 +248,49 @@ button:active{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#dua{
+    width: 30%;
+    height: 75%;
+    border-radius: 40%;
+   
+}
+#sobreDua{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    height: 60vh; 
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#sobreDua  h2,p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+
+table{
+    border: solid;
+    border-color: blue;
+    margin-top: 3%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    box-shadow: 20px 16px 16px rgba(0, 0, 0, 0.719);
+}
+#encabezado{
+    background-color: rgba(104, 90, 233, 0.733);
+    
+  
+}
+#impar{
+    background-color: rgb(226, 6, 226);
+}
+#impar:hover{
+    background-color: violet;
+}
+#par{
+    background-color: paleturquoise;
+}
+#par:hover{
+    background-color: rgb(9, 177, 177);
+}

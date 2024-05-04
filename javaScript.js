@@ -23,3 +23,5 @@ punto.forEach((cadaPunto, i)=>{
     })
 })
 
+if(confirm("Este sitio web utiliza cookies para mejorar la experiencia del usuario y proporcionar funcionalidades adicionales. Al utilizar nuestro sitio web, usted acepta el uso de cookies de acuerdo con nuestra Política de Cookies. "));
+
