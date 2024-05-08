@@ -17,7 +17,7 @@ body{
 }
 ul {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: 30px;
 }
 li {
@@ -36,8 +36,18 @@ li a{
     margin-top: 50%;
 }
 li a:hover{
-    background-color: rgba(230, 110, 241, 0.781);
+    background-color: rgba(249, 184, 255, 0.781); /*rgba(230, 110, 241, 0.781);*/
+    padding: 5%;
+    border-radius: 30%;
 }
+
+ul a.active{
+    background-color: rgba(249, 184, 255, 0.781);
+    color: black;
+    border-radius: 30%;
+    width: 150%;
+}
+
 header{
     
     height: 10%;
@@ -48,8 +58,9 @@ nav{
     margin-left: 1%;
     margin-right: 1%;
     height: 15%;
+    text-shadow: 2px 2px 4px white, 2px 2px rgb(189, 130, 238);
 }
- main{
+main{
     overflow-y: auto; 
     max-height: 100vh;
     background-color: rgba(128, 128, 128, 0.295);
@@ -68,6 +79,9 @@ h3{
     text-align: center;
     font-family: "Skranji", system-ui;
     font-weight: 900;
+    color: black;
+    text-shadow: 2px 1px violet, 3px 1px white;
+    padding: 1%;
 }
 #container-padre{
     display: flex;
@@ -112,6 +126,18 @@ footer p{
     text-align: center;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     font-weight: bold;
+    padding: 2%;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#card span {
+    align-items: center;
+}
+
+#card h3 {
+    color: black;
+    text-shadow: 2px 1px violet, 3px 1px white;
 }
 
 .container{
@@ -125,7 +151,7 @@ footer p{
 }
 .container .card{
     width: 330px;
-    height: 250px;
+    height: 270px;
     border-radius: 8px;
     box-shadow: 0 2 2 rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -148,6 +174,8 @@ footer p{
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
+    padding-bottom: 10px;
+    padding-top: 4px;
 }
 button{
     border: 0;
@@ -159,7 +187,7 @@ button{
     padding: 2px;
     cursor: pointer;
     transition: .3s;
-    margin-left: 30%;
+    margin-left: 37%;
 }
 button span{
     background-color: #111;
@@ -176,6 +204,10 @@ button:active{
 }
 .card a{
     text-decoration: none;
+}
+
+.card p {
+    text-align: center;
 }
 .carousel{
     overflow: hidden;
@@ -228,6 +260,8 @@ button:active{
     text-align: center;
     font-family: "Skranji", system-ui;
     font-weight: 900;
+    text-shadow: 2px 1px violet, 3px 1px white;
+    padding-bottom: 2%;
 }
 #video {
     display: flex;
@@ -246,7 +280,10 @@ button:active{
 }
 #video h2,p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 1%;
+    
 }
+
 
 #dua{
     width: 30%;
@@ -264,33 +301,151 @@ button:active{
     margin-left: 2%;
     margin-right: 2%;
 }
-#sobreDua  h2,p{
+#sobreDua  p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: justify;
+    padding-top: 1%;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#sobreDua h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    padding-top: 1%;
+    color: black;
+    text-shadow: 2px 1px violet, 3px 1px white;
 }
 
 table{
     border: solid;
-    border-color: blue;
+    border-color: rgb(111, 0, 255);
     margin-top: 3%;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     box-shadow: 20px 16px 16px rgba(0, 0, 0, 0.719);
+    margin: 0 auto;
+    margin-top: 1%;
 }
 #encabezado{
-    background-color: rgba(104, 90, 233, 0.733);
+    background-color: #685ae9bb;
     
   
 }
 #impar{
-    background-color: rgb(226, 6, 226);
+    background-color: #e244e2;
 }
 #impar:hover{
     background-color: violet;
 }
 #par{
-    background-color: paleturquoise;
+    background-color: rgb(180, 99, 255);
 }
 #par:hover{
-    background-color: rgb(9, 177, 177);
+    background-color: rgb(202, 146, 255);
 }
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+  
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+  }
+  
+  
+  .contact {
+    margin-block-end: 5em;
+    font-size: large;
+  }
+  
+  #trucazo {
+    opacity: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "description image";
+    }
+  
+    .hero-description {
+      grid-area: description;
+    }
+  
+    .hero-image {
+      grid-area: image;
+    }
+    .hero-image img {
+      inline-size: 500px;
+      margin-top: -50px;
+    }
+  
+    .pre-projects-content {
+      max-inline-size: 900px;
+      margin: auto;
+    }
+  
+    .project {
+      grid-template-areas: "description image";
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 3em;
+    }
+    .project-cta {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+    .project-cta button + button {
+      margin: 0;
+    }
+  
+    .testimony {
+      margin: auto;
+      padding: 5em;
+      text-align: center;
+    }
+    .testimony-copy {
+      font-size: 2.2em;
+      line-height: 55px;
+    }
+  
+    .testimony-title {
+      font-size: 1.5em;
+    }
+    .project, .testimony {
+      margin-block: 5em;
+    }
+  
+    .form .tag span {
+      display: block;
+      text-align: center;
+    }
+  
+  }

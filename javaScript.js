@@ -25,3 +25,16 @@ punto.forEach((cadaPunto, i)=>{
 
 if(confirm("Este sitio web utiliza cookies para mejorar la experiencia del usuario y proporcionar funcionalidades adicionales. Al utilizar nuestro sitio web, usted acepta el uso de cookies de acuerdo con nuestra Política de Cookies. "));
 
+
+//Formulario
+const $form = document.querySelector('#form')
+const $buttonMailto = document.querySelector('#trucazo')
+
+$form.addEventListener('submit', handleSubmit)
+
+function handleSubmit(event) {
+  event.preventDefault()
+  const form = new FormData(this)
+  $buttonMailto.setAttribute('href', `mailto:smonroyr02@educarex.es?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+  $buttonMailto.click()
+}
