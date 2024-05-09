@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -28,9 +29,12 @@ li {
 }
 li a{
     text-decoration: none;
-    color: black;
-    font-family: "Skranji", system-ui;
-    font-weight: 900;
+    color:black;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    -webkit-text-stroke: rgb(209, 144, 255); /*rgb(209, 144, 255);*/
+    -webkit-text-stroke-width: 0.7px;
     font-style: normal;
     text-align: center;
     margin-top: 50%;
@@ -87,6 +91,7 @@ h3{
     display: flex;
     justify-content: center;
     gap: 1%; 
+    padding-top: 2%;
 }
 
 .plataformas{
@@ -168,7 +173,13 @@ footer p{
     height: 150px;
 }
 .container .card h4{
+    color: white;
     font-weight: 600;
+    font-size: 20px;
+    background-image: linear-gradient(150deg, #9500ff, #09ff,#00DDFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: white;
 }
 .container .card p{
     padding: 0 1rem;
@@ -176,6 +187,10 @@ footer p{
     font-weight: 300;
     padding-bottom: 10px;
     padding-top: 4px;
+    color: white;
+    -webkit-text-stroke: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.2px;
+    text-shadow: 2px 2px 4px rgb(252, 202, 255), 2px 2px rgb(0, 0, 0);
 }
 button{
     border: 0;
@@ -310,7 +325,7 @@ button:active{
 }
 
 #sobreDua h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Skranji", system-ui; /*'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
     text-align: justify;
     padding-top: 1%;
     color: black;
