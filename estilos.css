@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
@@ -43,6 +44,8 @@ li a:hover{
     background-color: rgba(249, 184, 255, 0.781); /*rgba(230, 110, 241, 0.781);*/
     padding: 5%;
     border-radius: 30%;
+    text-decoration: none;
+    color: black;
 }
 
 ul a.active{
@@ -345,7 +348,6 @@ table{
 #encabezado{
     background-color: #685ae9bb;
     
-  
 }
 #impar{
     background-color: #e244e2;

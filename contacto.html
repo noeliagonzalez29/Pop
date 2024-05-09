@@ -7,15 +7,16 @@
     <meta name="author" content="Sonia Monroy, Noelia González">
     <meta name="description" content="web dedicada a la artista pop Dua Lipa">
     <link rel="icon" type="image/x-icon" href="img/favicondua.png">
+    <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <script src="javaScript.js" defer></script>
     <title>Dua Lipa</title>
 </head>
 <body>
-        <header >
+        <header class="col-12 col-md-12 col-lg-12">
             <img src="img/Dua_Lipa_logo.png" alt="logo Dua Lipa" title="nombre Dua Lipa" id="logo">
         </header>
-        <nav>
+        <nav class="col-12 col-md-12 col-lg-12">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="merch.html">Merch</a></li>
@@ -24,37 +25,35 @@
                 <li><a class="active" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-            <main>
-                <section class="contact">
-                    <div class="u-wrapper">
-                    <div class="contact-content">
-                
-                        <form id="form" action="" class="form">
-                        <h3 class="tag"><span>CONTÁCTANOS</span></h3>
-                        <label for="name">Nombre Completo <span>*</span></label>
-                        <input name="name" required type="text" id="name" placeholder="Nombre">
-                        <label for="email">Correo electrónico <span>*</span></label>
-                        <input name="email" type="text" id="email" required placeholder="Correo">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
-                        <button type="submit" class="btn primary full">Enviar mensaje</button>
-                        </form>
-                        <a href="mailto:smonroyr02@educarex.es" id="trucazo"></a>
-                    </div>
-                    </div>
-                </section>                
-                
-            </main>
-            
         
-       
-        <footer>
+        <main class="col-12 col-md-12 col-lg-12">
+            <section class="contact">
+                <div class="u-wrapper">
+                <div class="contact-content">
+            
+                    <form id="form" action="" class="form">
+                    <h3 class="tag"><span>CONTÁCTANOS</span></h3>
+                    <label for="name">Nombre Completo <span>*</span></label>
+                    <input name="name" required type="text" id="name" placeholder="Nombre">
+                    <label for="email">Correo electrónico <span>*</span></label>
+                    <input name="email" type="text" id="email" required placeholder="Correo">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn primary full">Enviar mensaje</button>
+                    </form>
+                    <a href="mailto:contactoduans@gmail.com" id="trucazo"></a>
+                </div>
+                </div>
+            </section>                
+            
+        </main>
+        
+        
+        <footer class="col-12 col-md-12 col-lg-12">
             <p>Noelia González | Sonia Monroy</p>
             <p>© 2024</p>
         </footer>
 
 
-  
-   
 </body>
 </html>
